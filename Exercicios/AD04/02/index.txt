@@ -1,0 +1,37 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO SEMÁFORO --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe a situação do semáforo:");
+        string TipoIngresso = Console.ReadLine();
+
+        if (TipoIngresso == "verde")
+        {
+            Console.WriteLine("Atravesse");
+        }
+
+        else if (TipoIngresso == "vermelho")
+        {
+            Console.WriteLine("Espere");
+        }
+
+        else 
+        {
+            Console.WriteLine("Farol inoperante");
+        }
+    }
+}

@@ -1,0 +1,63 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO IMC --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o seu peso:");
+        double peso = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a sua altura:");
+        double altura = Convert.ToDouble(Console.ReadLine());
+
+        double IMC = peso / (altura * altura);
+
+        if (IMC >= 40)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Obesidade Grau III");
+        }
+
+        else if (IMC >= 35 && IMC < 39.9)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Obesidade Grau II");
+        }
+
+        else if (IMC >= 30 && IMC < 34.9)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Obesidade Grau I");
+        }
+
+        else if (IMC >= 25 && IMC < 29.9)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Sobrepeso");
+        }
+
+        else if (IMC >= 18.5 && IMC < 24.9)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Peso Normal");
+        }
+
+        else if (IMC < 18.5)
+        {
+            Console.WriteLine($"Seu IMC é {IMC}");
+            Console.WriteLine("Sua classificação é Abaixo do Peso");
+        }
+    }
+}

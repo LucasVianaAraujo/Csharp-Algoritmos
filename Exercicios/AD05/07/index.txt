@@ -1,0 +1,60 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO INGRESSO DE CINEMA --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe a quantidade de inteiras");
+        int Inteiras = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe a quantidade de meias");
+        int Meias = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o dia da semana");
+        string Dia = Console.ReadLine();
+
+        Console.WriteLine("O filme é nacional?");
+        string Resposta = Console.ReadLine().ToLower();
+
+        bool Nacional = (Resposta == "sim" || Resposta == "true");
+
+        if (Dia == "quarta-feira" && Nacional == false)
+        {
+            double Inteira = Inteiras * 14.25;
+            double Meia = Meias * 14.25;
+            double CalcularIngresso = Inteira + Meia;
+
+            Console.WriteLine($"O total a se pagar pelos ingresso é R${CalcularIngresso}");
+        }
+
+        else if (Dia != "quarta-feira" && Nacional == false)
+        {
+            double Inteira = Inteiras * 28.50;
+            double Meia = Meias * (28.50 / 2);
+            double CalcularIngresso = Inteira + Meia;
+
+            Console.WriteLine($"O total a se pagar pelos ingresso é R${CalcularIngresso}");
+        }
+
+        else if (Nacional == true)
+        {
+            double Inteira = Inteiras * 5;
+            double Meia = Meias * 5;
+            double CalcularIngresso = Inteira + Meia;
+
+            Console.WriteLine($"O total a se pagar pelos ingresso é R${CalcularIngresso}");
+        }
+    }
+}

@@ -1,0 +1,118 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA MENSALIDADE --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe a sigla do seu curso");
+        string Curso = Console.ReadLine();
+
+        if (Curso == "SI")
+        {
+            Console.WriteLine("Aluno é isento?");
+            bool Isencao = Convert.ToBoolean(Console.ReadLine());
+
+            if (Isencao == true)
+            {
+                Console.WriteLine("0.00");
+            }
+
+            else if (Isencao == false)
+            {
+                Console.WriteLine("Informe o desconto, se houver (em %)");
+                double Desconto = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(550 - (550 * Desconto / 100));
+            }
+        }
+
+        if (Curso == "ADS")
+        {
+            Console.WriteLine("Aluno é isento?");
+            bool Isencao = Convert.ToBoolean(Console.ReadLine());
+
+            if (Isencao == true)
+            {
+                Console.WriteLine("0.00");
+            }
+
+            else if (Isencao == false)
+            {
+                Console.WriteLine("Informe o desconto, se houver (em %)");
+                double Desconto = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(750 - (750 * Desconto / 100));
+            }
+        }
+
+        if (Curso == "CS")
+        {
+            Console.WriteLine("Aluno é isento?");
+            bool Isencao = Convert.ToBoolean(Console.ReadLine());
+
+            if (Isencao == true)
+            {
+                Console.WriteLine("0.00");
+            }
+
+            else if (Isencao == false)
+            {
+                Console.WriteLine("Informe o desconto, se houver (em %)");
+                double Desconto = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(1150 - (1150 * Desconto / 100));
+            }
+        }
+
+        if (Curso == "EC")
+        {
+            Console.WriteLine("Aluno é isento?");
+            bool Isencao = Convert.ToBoolean(Console.ReadLine());
+
+            if (Isencao == true)
+            {
+                Console.WriteLine("0.00");
+            }
+
+            else if (Isencao == false)
+            {
+                Console.WriteLine("Informe o desconto, se houver (em %)");
+                double Desconto = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(1300 - (1300 * Desconto / 100));
+            }
+        }
+
+        if (Curso == "ES")
+        {
+            Console.WriteLine("Aluno é isento?");
+            bool Isencao = Convert.ToBoolean(Console.ReadLine());
+
+            if (Isencao == true)
+            {
+                Console.WriteLine("0.00");
+            }
+
+            else if (Isencao == false)
+            {
+                Console.WriteLine("Informe o desconto, se houver (em %)");
+                double Desconto = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine(950 - (950 * Desconto / 100));
+            }
+        }
+
+    }
+}

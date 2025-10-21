@@ -1,0 +1,14 @@
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\bin\Debug\net9.0\CsharpAD04.exe
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\bin\Debug\net9.0\CsharpAD04.deps.json
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\bin\Debug\net9.0\CsharpAD04.runtimeconfig.json
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\bin\Debug\net9.0\CsharpAD04.dll
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\bin\Debug\net9.0\CsharpAD04.pdb
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.AssemblyInfoInputs.cache
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.AssemblyInfo.cs
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.dll
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\refint\CsharpAD04.dll
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.pdb
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\CsharpAD04.genruntimeconfig.cache
+C:\Users\Lucas Viana\Desktop\Projetos\CsharpAD04\obj\Debug\net9.0\ref\CsharpAD04.dll

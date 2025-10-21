@@ -1,0 +1,44 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO TIPO DE TRIÂNGULO --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o primeiro lado:");
+        int PrimeiroLado = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o primeiro lado:");
+        int SegundoLado = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o primeiro lado:");
+        int TerceiroLado = Convert.ToInt32(Console.ReadLine());
+
+        if (PrimeiroLado == SegundoLado && PrimeiroLado == TerceiroLado)
+        {
+            Console.WriteLine("Esse é um triângulo Equilátero");
+        }
+
+        else if (PrimeiroLado == SegundoLado || PrimeiroLado == TerceiroLado)
+        {
+            Console.WriteLine("Esse é um triângulo isósceles");
+        }
+
+        else
+        {
+            Console.WriteLine("Esse é um triânulo Escaleno");
+        }
+
+    }
+}

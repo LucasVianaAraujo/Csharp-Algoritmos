@@ -1,0 +1,50 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DAS CORES PRIMÁRIAS --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe a primeira cor:");
+        string PrimeiraCor = Console.ReadLine();
+
+        Console.WriteLine("Informe a segunda cor:");
+        string SegundaCor = Console.ReadLine();
+
+        string PrimeriaCorConv = PrimeiraCor.ToLower();
+
+        string SegundaCorConv = SegundaCor.ToLower();
+
+        if (PrimeriaCorConv == "vermelho" && SegundaCorConv == "azul" || PrimeriaCorConv == "azul" && SegundaCorConv == "vermelho")
+        {
+            Console.WriteLine("A combinação de cores é: Roxo");
+        }
+
+        else if (PrimeriaCorConv == "amarelo" && SegundaCorConv == "vermelho" || PrimeriaCorConv == "vermelho" && SegundaCorConv == "amarelo")
+        {
+            Console.WriteLine("A combinação de cores é: Laranja");
+        }
+
+        else if (PrimeriaCorConv == "azul" && SegundaCorConv == "amarelo" || PrimeriaCorConv == "amarelo" && SegundaCorConv == "azul")
+        {
+            Console.WriteLine("A combinação de cores é: Verde");
+        }
+
+        else
+        {
+            Console.WriteLine("Apenas cores primárias são aceitas");
+        }
+
+    }
+}

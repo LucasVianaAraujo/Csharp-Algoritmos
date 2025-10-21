@@ -1,0 +1,38 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA MENSAGEM DE CONFIRMAÇÃO DE ENVIO --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o dia:");
+        int Dia = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o dia da semana (em número):");
+        int DiaDaSemana = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o mês (em número):");
+        int Mes = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Informe o ano:");
+        int Ano = Convert.ToInt32(Console.ReadLine());
+
+        string[] arrMes = new string[12] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
+
+        string[] arrDia = new string[7] { "Domingo","Segunda-Feira","Terça-feira","Quarta-feira","Quinta-feira","Sexta-feira","Sábado"};
+
+        Console.WriteLine($"Enviado {arrDia[DiaDaSemana]}, {Dia} de {arrMes[Mes]} de {Ano}");
+
+    }
+}

@@ -1,0 +1,37 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA SORVETERIA --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o total (em gramas):");
+        double ValorEmGramas = Convert.ToDouble(Console.ReadLine());
+
+        double ValorKg = ValorEmGramas / 1000;
+
+        double Resultado = ValorKg * 3.50;
+
+        if (Resultado <= 0)
+        {
+            Console.WriteLine("Peso inválido");
+        }
+
+        else
+        {
+            Console.WriteLine($"O total a pagar é R${Resultado}");
+        }
+
+    }
+}

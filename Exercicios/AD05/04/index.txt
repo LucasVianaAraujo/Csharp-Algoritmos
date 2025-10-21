@@ -1,0 +1,63 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA CALCULADORA --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o operador");
+        string Operador = Console.ReadLine();
+
+        Console.WriteLine("Informe o primeiro valor numérico");
+        double n1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe o segundo valor numérico");
+        double n2 = Convert.ToDouble(Console.ReadLine());
+
+
+        string OperadorConv = Operador.ToLower();
+
+        if (OperadorConv == "soma")
+        {
+            Console.WriteLine("Resultado é: " + (n1 + n2));
+        }
+
+        else if (OperadorConv == "subtração" || OperadorConv == "subtracao")
+        {
+            Console.WriteLine("Resultado é: " + (n1 - n2));
+        }
+
+        else if (OperadorConv == "multiplicação" || OperadorConv == "multiplicacao")
+        {
+            Console.WriteLine("Resultado é: " + (n1 * n2));
+        }
+
+        else if (OperadorConv == "divisão" || OperadorConv == "divisao")
+        {
+            Console.WriteLine("Resultado é: " + (n1 / n2));
+        }
+
+        else if (OperadorConv == "resto da divisão" || OperadorConv == "resto da divisao")
+        {
+            Console.WriteLine( "Resultado é: " + (n1 % n2));
+        }
+
+        else if (OperadorConv == "potência" || OperadorConv == "potencia")
+        {
+            double Potencia = Math.Pow(n1, n2);
+            Console.WriteLine("Resultado é: " + Potencia);
+        }
+
+    }
+}

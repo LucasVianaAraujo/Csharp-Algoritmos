@@ -1,0 +1,50 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        CalculoIngressos();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO CINEMA --");
+        Console.WriteLine("-- 1) MEIA: R$28,50   --");
+        Console.WriteLine("-- 2) MEIA: R$57,50   --");
+    }
+
+    public static void CalculoIngressos()
+    {
+        Console.WriteLine("Informe o tipo de ingresso:");
+        int TipoIngresso = Convert.ToInt32(Console.ReadLine());
+
+        if (TipoIngresso > 2 || TipoIngresso < 0)
+        {
+            Console.WriteLine("Falha ao efetuar compra!");
+            return;
+        }
+
+        Console.WriteLine("Informe a quantidade de ingressos:");
+        int QuantidadeIngresso = Convert.ToInt32(Console.ReadLine());
+
+        if (TipoIngresso == 1)
+        {
+            double Resultado = QuantidadeIngresso * 28.50;
+            Console.WriteLine($"Total R${Resultado}");
+        }
+
+        else if (TipoIngresso == 2)
+        {
+            double Resultado = QuantidadeIngresso * 57;
+            Console.WriteLine($"Total R${Resultado}");
+        }
+
+        else
+        {
+            Console.WriteLine("Falha ao efetuar compra!");
+        }
+    }
+}

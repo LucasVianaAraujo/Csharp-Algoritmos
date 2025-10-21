@@ -1,0 +1,44 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA NOTA DE CORTE --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o primeiro valor numérico");
+        double Nota = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a nota de corte");
+        double NotaCorte = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a nota mínima para aprovação");
+        double NotaMin = Convert.ToDouble(Console.ReadLine());
+
+        if (Nota <= NotaCorte)
+        {
+            Console.WriteLine("Candidato não passou");
+        }
+
+        else if (Nota >= NotaMin)
+        {
+            Console.WriteLine("Candidato aprovado");
+        }
+
+        else if (Nota >= NotaMin && Nota <= NotaCorte)
+        {
+            Console.WriteLine("Candidato está na lista de espera");
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DO DIA DA SEMANA --");
+
+        Console.WriteLine("1) Janeiro");
+        Console.WriteLine("2) Fevereiro");
+        Console.WriteLine("3) Março");
+        Console.WriteLine("4) Abril");
+        Console.WriteLine("5) Maio");
+        Console.WriteLine("6) Junho");
+        Console.WriteLine("7) Julho");
+        Console.WriteLine("8) Agosto");
+        Console.WriteLine("9) Setembro");
+        Console.WriteLine("10) Outubro");
+        Console.WriteLine("11) Novembro");
+        Console.WriteLine("12) Dezembro");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe o mês:");
+        int MesInserido = Convert.ToInt32(Console.ReadLine());
+
+        string[] MesesDoAno = new string[12] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
+
+        Console.WriteLine(MesesDoAno[MesInserido - 1]);
+    }
+}

@@ -1,0 +1,65 @@
+namespace CsharpAD04;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA CLASSIFICAÇÃO DO ALUNO --");
+    }
+
+    public static void Calculo()
+    {
+
+        Console.WriteLine("Informe a primeira nota do aluno");
+        double PrimeiraNota = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a primeira nota do aluno");
+        double SegundaNota = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a primeira nota do aluno");
+        double TerceiraNota = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Informe a quantidade de faltas");
+        int Faltas = Convert.ToInt32(Console.ReadLine());
+
+        double MediaFinal = (PrimeiraNota + SegundaNota + TerceiraNota) / 3;
+
+        if (MediaFinal >= 8 && Faltas <= 30)
+        {
+            Console.WriteLine("Situação do aluno: Aprovado com sucesso");
+        }
+
+        else if (MediaFinal >= 6 && MediaFinal < 8 && Faltas <= 30)
+        {
+            Console.WriteLine("Situação do aluno: Aprovado");
+        }
+
+        else if (MediaFinal >= 3 && MediaFinal < 6 && Faltas <= 30)
+        {
+            Console.WriteLine("Situação do aluno: Aprovado");
+        }
+
+        else if (MediaFinal < 3)
+        {
+            Console.WriteLine("Situação do aluno: Reprovado");
+        }
+
+        else if (MediaFinal == 0)
+        {
+            Console.WriteLine("Situação do aluno: Desistente");
+        }
+
+        else if (Faltas >= 30)
+        {
+            Console.WriteLine("Situação do aluno: Reprovado");
+        }
+
+    }
+}

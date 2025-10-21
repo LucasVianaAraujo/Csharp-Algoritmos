@@ -1,0 +1,52 @@
+namespace cSharp01;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("-- PROGRAMA DA FEBRE --");
+    }
+
+    public static void Calculo()
+    {
+        Console.WriteLine("Informe a temperatura:");
+        double Temperatura = Convert.ToDouble(Console.ReadLine());
+
+        if (Temperatura >= 41)
+        {
+            Console.WriteLine("Hipetermia");
+        }
+
+        else if (Temperatura >= 39.6 && Temperatura < 41)
+        {
+            Console.WriteLine("Febre Alta");
+        }
+
+        else if (Temperatura >= 37.6 && Temperatura < 39.6)
+        {
+            Console.WriteLine("Febre");
+        }
+
+        else if (Temperatura >= 36 && Temperatura < 37.6)
+        {
+            Console.WriteLine("Normal");
+        }
+
+        else if (Temperatura < 36)
+        {
+            Console.WriteLine("Hipotermia");
+        }
+
+        else
+        {
+            Console.WriteLine("Temperatura inválida");
+        }
+    }
+}
